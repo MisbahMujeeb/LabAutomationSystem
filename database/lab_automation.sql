@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 22, 2020 at 06:22 PM
+-- Generation Time: Jun 24, 2020 at 02:38 PM
 -- Server version: 10.4.10-MariaDB
--- PHP Version: 7.2.25
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -145,6 +145,33 @@ INSERT INTO `products` (`id`, `model`, `categories_id`, `brand`, `qty`, `qty_lef
 (17, 'LWM-901', 31, 'Wireless Mouse', 77, 22, '4947787579558_550x419.jpg', 1),
 (15, 'iphone 11 Pro Maxx', 32, 'apple', 33, 12, '418109934942_5-3-600x600.png', 1),
 (16, 'Galaxy A10', 32, 'Samsung Galaxy', 33, 4, '4831859320211_550x678.jpg', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `report`
+--
+
+DROP TABLE IF EXISTS `report`;
+CREATE TABLE IF NOT EXISTS `report` (
+  `id` int(12) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
+  `productId` int(11) DEFAULT NULL,
+  `testTitle` varchar(100) DEFAULT NULL,
+  `testDescrition` text DEFAULT NULL,
+  `testOutput` text DEFAULT NULL,
+  `testResult` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `report`
+--
+
+INSERT INTO `report` (`id`, `productId`, `testTitle`, `testDescrition`, `testOutput`, `testResult`) VALUES
+(000000000014, 16, 'Test 4', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', 'good', 'Accept'),
+(000000000012, 18, 'Test 2', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', 'good', 'Accept'),
+(000000000013, 17, 'Test 3', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', 'good', 'Reject'),
+(000000000011, 15, 'Test 1', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', 'good', 'Accept');
 
 -- --------------------------------------------------------
 

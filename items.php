@@ -76,6 +76,8 @@ $res=mysqli_query($con,$sql);
                                             }else{
                                                 echo "<span class='badge badge-pending'><a href='?type=status&operation=Active&id=".$row['id']."'>Deactive</a></span>&nbsp;";
                                             }     
+                                            echo "<span class='badge badge-pending'><a href='Report.php?productId=".$row['id']."'>Report</a></span>&nbsp;";        
+
                                             echo "<span class='badge badge-edit'><a href='add_items?id=".$row['id']."'>Edit</a></span>&nbsp;";             
 
                                                 echo "<span class='badge badge-delete'><a href='?type=delete&id=".$row['id']."'>Delete</a></span>";             

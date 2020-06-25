@@ -10,7 +10,7 @@
   
   <meta name="author" content="themefisher.com">
 
-  <title>Rapoo- It solutions &amp; Corporate template</title>
+  <title>SRS Electronic Appliances &amp;Lab Automation System</title>
 
   <!-- bootstrap.min css -->
   <link rel="stylesheet" href="userPlugins/bootstrap/css/bootstrap.min.css">
@@ -126,10 +126,10 @@
                         </li>
 
                     </ul>
-<!-- 
+
                     <ul class="ml-lg-auto list-unstyled m-0">
-                        <li><a href="#" class="btn btn-trans-white btn-circled">Get a quote</a></li>
-                    </ul> -->
+                        <li><a href="login.php" class="btn btn-trans-white btn-circled">Admin Login</a></li>
+                    </ul>
                 </div> <!-- / .navbar-collapse -->
             </nav>
         </div> <!-- / .container -->

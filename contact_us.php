@@ -47,7 +47,7 @@ $res=mysqli_query($con,$sql);
                                     <tr>
 
                                         <td><?php echo $row['id']?></td>
-                                        <td><?php echo $row['name']?></td>
+                                        <td><?php echo $row['Name']?></td>
                                         <td><?php echo $row['email']?></td>
                                         <td><?php echo $row['mobile']?></td>
                                         <td><?php echo $row['comment']?></td>

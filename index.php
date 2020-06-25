@@ -9,7 +9,7 @@
 
     <!-- HERO
     ================================================== -->
-    <section class="banner-area py-5" id="banner">
+    <section class="banner-area py-5" id="banner" style="background-color: black;">
        <div class="overlay"></div>
         <!-- Content -->
         <div class="container">

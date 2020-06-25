@@ -96,7 +96,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="about.php" class="nav-link js-scroll-trigger">
+                            <a href="userAbout.php" class="nav-link js-scroll-trigger">
                                 About
                             </a>
                         </li>

@@ -53,12 +53,20 @@ if(isset($_POST['submit'])){
                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                      </div>
                      <button type="submit" name="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+                     
+                     
                     </form>
                     <div class="field_error"><?php echo $msg?></div>
                </div>
             </div>
          </div>
       </div>
+      <center>
+      <a href="index.php">
+                     <button type="submit" name="submit" class="btn btn-success ">Back</button>
+                     </a>
+
+</center>
       <script src="assets/js/vendor/jquery-2.1.4.min.js" type="text/javascript"></script>
       <script src="assets/js/popper.min.js" type="text/javascript"></script>
       <script src="assets/js/plugins.js" type="text/javascript"></script>

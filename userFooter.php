@@ -7,7 +7,7 @@
                     <div class="footer-widget">
                         <!-- Brand -->
                         <a href="#" class="footer-brand text-white">
-                            Rapoo
+                            SRS
                         </a>
                         <p>Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
@@ -108,7 +108,7 @@
                 <div class="col-lg-12">
                     <!-- Copyright -->
                     <p class="footer-copy ">
-                        &copy; Copyright <span class="current-year">Themefisher</span> All rights reserved.
+                        &copy; <span class="current-year">SRS Electronic Appliances</span> 
                     </p>
                 </div>
             </div> <!-- / .row -->

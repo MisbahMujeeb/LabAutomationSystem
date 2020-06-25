@@ -66,15 +66,7 @@
                             <p>Email Us</p>
                         </div>
                     </div>
-                    <div class="top-info-block d-inline-flex">
-                        <div class="icon-block">
-                            <i class="ti-time"></i>
-                        </div>
-                        <div class="info-block">
-                            <h5 class="font-weight-500">Mon-Sat 9:00-12.00 </h5>
-                            <p>Sunday Closed</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -115,16 +107,11 @@
                         </li>
                         <li class="nav-item ">
                             <a href="pricing.html" class="nav-link js-scroll-trigger">
-                                Pricing
+                                Products
                             </a>
                         </li>
 
-                        <li class="nav-item ">
-                            <a href="project.html" class="nav-link js-scroll-trigger">
-                                Projects
-                            </a>
-                        </li>
-
+                        
                     </ul>
 
                     <ul class="ml-lg-auto list-unstyled m-0">

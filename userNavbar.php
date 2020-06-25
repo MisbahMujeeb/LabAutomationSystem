@@ -106,7 +106,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="pricing.html" class="nav-link js-scroll-trigger">
+                            <a href="userProduct.php" class="nav-link js-scroll-trigger">
                                 Products
                             </a>
                         </li>

@@ -49,7 +49,7 @@ $week .=str_repeat('<td></td>',$str);
 for($day=1;$day<=$day_count;$day++,$str++){
     $date=$ym.'-'.$day;
     if($today==$date){
-        $week='<td class="today">'.$day;
+        $week.='<td class="today">'.$day;
     }else{
         $week .='<td>'.$day;
     }

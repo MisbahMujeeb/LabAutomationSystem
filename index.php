@@ -23,7 +23,7 @@
                         </h1>
 
                         <!-- Subheading -->
-                        <p class="lead mb-5">
+                        <p class="lead mb-5" style="margin-left:80px">
                             Pindom is set of landing and support pages aimed at helping companies promote new products and business launches.Pindom is set of landing and support pages aimed at helping companies promote new products and business launches.
                         </p>
 </center>

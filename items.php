@@ -69,8 +69,9 @@ function filterTable($query)
                            <h4 class="box-link"><a href="add_items.php" >Add Items</a> </h4>
                            <form class="form-inline" method="post" >
                           
-                          <input type="text" name="valueToSearch" style="float:right" class="form-control ml-auto" placeholder="Search By Brands">
-                          <input type="submit" name="search"  class="btn btn-primary form-control float-right" value="Filter"><br><br>
+                          <input type="text" name="valueToSearch" style="float:right ;margin-top:-90px" class="form-control ml-auto" placeholder="Search By Brands">
+                          <input type="submit" name="search"  class="btn btn-primary form-control float-right" style="margin-top:-90px" value="Filter"><br><br>
+                      
                         </div>
                         <div class="card-body--">
                            <div class="table-stats order-table ov-h">

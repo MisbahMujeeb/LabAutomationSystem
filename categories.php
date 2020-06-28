@@ -26,8 +26,29 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 
     }
 }
-$sql="SELECT * from categories order by categories asc";
-$res=mysqli_query($con,$sql);
+
+
+if(isset($_POST['search']))
+{
+    $valueToSearch = $_POST['valueToSearch'];
+    // search in all table columns
+    // using concat mysql function
+    $query = "SELECT * FROM `categories` WHERE CONCAT(`categories`) LIKE '%".$valueToSearch."%'";
+    $search_result = filterTable($query);
+    
+}
+ else {
+    $query = "SELECT * FROM `categories`";
+    $search_result = filterTable($query);
+}
+
+// function to connect and execute the query
+function filterTable($query)
+{
+    $connect = mysqli_connect("localhost", "root", "", "lab_automation");
+    $filter_Result = mysqli_query($connect, $query);
+    return $filter_Result;
+}
 ?>
 <div class="content pb-0">
             <div class="orders">
@@ -35,8 +56,14 @@ $res=mysqli_query($con,$sql);
                   <div class="col-xl-12">
                      <div class="card">
                         <div class="card-body">
-                           <h2 class="box-title">Categories </h2>
-                           <h4 class="box-link"><a href="add_categories" >Add Categories</a> </h4>
+                           <h2 class="box-title">Categories    </h2>
+                           <h4 class="box-link"><a href="add_categories" >Add Categories</a>      </h4>
+                        
+                           <form class="form-inline" method="post" >
+                          
+                           <input type="text" name="valueToSearch" style="float:right" class="form-control ml-auto" placeholder="Value To Search">
+                           <input type="submit" name="search"  class="btn btn-primary form-control float-right" value="Filter"><br><br>
+                        
                         </div>
                         <div class="card-body--">
                            <div class="table-stats order-table ov-h">
@@ -53,7 +80,7 @@ $res=mysqli_query($con,$sql);
                                  <tbody style="text-align:center">
                                      <?php 
                                      $i=1;
-                                     while($row=mysqli_fetch_assoc($res)){?>
+                                     while($row=mysqli_fetch_array($search_result)){?>
                                     <tr>
                                     <td class="serial"><?php echo $i?></td>
 
@@ -76,6 +103,8 @@ $res=mysqli_query($con,$sql);
                                      <?php } ?>
                                  </tbody>
                               </table>
+                              </form>
+        
                            </div>
                         </div>
                      </div>

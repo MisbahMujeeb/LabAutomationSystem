@@ -62,7 +62,7 @@ $con=mysqli_connect("localhost","root","","lab_automation");
                                           
                                             <dt class='col-sm-3 text-truncate'>Result</dt>
                                             <dd class='col-sm-9'>$row2[5]</dd>
-                                            <dt class='col-sm-3 text-truncate'>Result</dt>
+                                            <dt class='col-sm-3 text-truncate'></dt>
                                             <dd class='col-sm-9'>   <h4 class='box-link'><a href='userProduct.php' >Back</a> </h4></dd>
                                          
                                             </div>";

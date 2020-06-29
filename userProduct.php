@@ -85,10 +85,10 @@ function filterTable($query)
                     <div class="process-block">
                         <!-- <img src="userimages/process/process-1.jpg" alt="" class="img-fluid"> -->
                         <td><img width="200px " height="200px" src="images/Products/<?php echo $row['image']?>"/>
-                        <h3><?php echo $row['categories'] ?></h3>
+                        <h3><?php echo $row['brand'] ?></h3>
                         <p> <b>Product ID :</b><?php echo $row['id'] ?></p>
                         <p> <b>Model :</b><?php echo $row['model'] ?></p>
-                        <p> <b>Category :</b><?php echo $row['brand'] ?></p>
+                        <p> <b>Category :</b><?php echo $row['categories'] ?></p>
                         <a href="<?php echo 'userReport.php?productId='.$row['id'] ?>" class="btn btn-primary btn-circled" >Report</a>
                     </div>
                 </div>
